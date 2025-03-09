@@ -12,11 +12,10 @@ export default function Home() {
 
 //2) убрать яблоко из массива
     fruits.splice(1, 1);
-    console.log(fruits);
 
 //3) отсортировать по алфавиту
     fruits.sort();
-    console.log(fruits);
+
 
     const newFruits = [
       {
@@ -34,9 +33,8 @@ export default function Home() {
       ]; // начальный массив с объектами
       
       //преобразовать данный массив в новый:
-      
-      const price = newFruits[2].price
-      console.log(price);
+      const fruitStrings = newFruits.map(newFruits => `${newFruits.name} стоит ${newFruits.price} грн.`);
+      console.log(fruitStrings);
 
       // const bananaData = newFruits[1];
       // const price = bananaData.price
