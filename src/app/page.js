@@ -248,7 +248,7 @@ export default function Home() {
     }
   ];
   const newMemory = dataArray.map((element, index) => {
-    //const user = element.user
+    const user = element.user
     const userSettings = user.settings
     const userSMS = userSettings.notifications.sms.carrier
     const userBio = user.profile.bio
